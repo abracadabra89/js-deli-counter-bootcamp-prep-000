@@ -1,6 +1,8 @@
-function takeANumber(katzDeli,name){
-  katzDeli.push(`${name}`);
-  return(`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
+let counter = 0;
+function takeANumber(katzDeli){
+  katzDeli.push(++counter);
+  //katzDeli.push(`${name}`);
+  return ("Welcome. You are number " + counter);
 }
 
 function nowServing(katzDeliLine){
